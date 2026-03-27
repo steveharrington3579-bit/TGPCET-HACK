@@ -2,6 +2,7 @@
 
 import { useSubscriptionStore } from '@/lib/store';
 import CategoryChart from '@/components/CategoryChart';
+import CircularAnalytics from '@/components/CircularAnalytics';
 
 // Get category color classes for dots
 const getCategoryDotColor = (category: string) => {
@@ -70,13 +71,10 @@ export default function AnalyticsPanel() {
                   <span className="text-xs text-gray-500 dark:text-gray-400 min-w-[40px] text-right">
                     {percentage.toFixed(1)}%
                   </span>
-                  <div className="flex-1 max-w-[120px] ml-2">
-                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
-                      <div
-                        className="h-1.5 rounded-full bg-blue-500"
-                        style={{ width: `${Math.min(percentage, 100)}%` }}
-                      ></div>
-                    </div>
+                  <div className="flex-1 max-w-[120px] ml-2 w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 overflow-hidden">
+                    <div
+                      className={`h-1.5 rounded-full bg-blue-500 transition-all duration-300 w-${Math.min(Math.floor(percentage), 100)}`}
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -84,6 +82,9 @@ export default function AnalyticsPanel() {
           })}
         </div>
       </div>
+
+      {/* Circular Analytics Chart */}
+      <CircularAnalytics />
 
       {/* Biggest Drain Callout */}
       {biggestDrain.merchantName && (

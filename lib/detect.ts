@@ -79,10 +79,10 @@ export function detectSubscriptions(transactions: Transaction[]): Subscription[]
   const allDetectedCategories: string[] = [];
 
   // Process each merchant group
-  for (const [normalizedMerchant, merchantTransactions] of groupedTransactions) {
+  groupedTransactions.forEach((merchantTransactions, normalizedMerchant) => {
     // Only consider groups with 2 or more transactions
     if (merchantTransactions.length < 2) {
-      continue;
+      return;
     }
 
     // Sort transactions by date ascending
@@ -101,7 +101,7 @@ export function detectSubscriptions(transactions: Transaction[]): Subscription[]
     const hasMonthlyPattern = intervals.some(interval => interval >= 25 && interval <= 35);
 
     if (!hasMonthlyPattern) {
-      continue;
+      return;
     }
 
     // Check amount consistency (max variation <= 10%)
@@ -112,7 +112,7 @@ export function detectSubscriptions(transactions: Transaction[]): Subscription[]
     const isAmountConsistent = variationPercentage <= 10;
 
     if (!isAmountConsistent) {
-      continue;
+      return;
     }
 
     // If both checks pass, mark as subscription
@@ -152,7 +152,7 @@ export function detectSubscriptions(transactions: Transaction[]): Subscription[]
     };
 
     subscriptions.push(subscription);
-  }
+  });
 
   // Calculate cancel scores for all subscriptions
   for (const subscription of subscriptions) {

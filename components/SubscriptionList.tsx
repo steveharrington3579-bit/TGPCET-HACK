@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useSubscriptionStore } from '@/lib/store';
-import SubscriptionCard from '@/components/SubscriptionCard';
+import SubscriptionTable from '@/components/SubscriptionTable';
 
 const CATEGORIES = [
   { id: 'all', name: 'All' },
@@ -11,6 +11,7 @@ const CATEGORIES = [
   { id: 'Health', name: 'Health' },
   { id: 'Utilities', name: 'Utilities' },
   { id: 'Food', name: 'Food' },
+  { id: 'Finance', name: 'Finance' },
 ];
 
 export default function SubscriptionList() {
@@ -75,6 +76,7 @@ export default function SubscriptionList() {
             <div className="flex flex-wrap gap-2">
               {CATEGORIES.map((category) => (
                 <button
+                  type="button"
                   key={category.id}
                   onClick={() => handleCategoryChange(category.id === 'all' ? null : category.id)}
                   className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
@@ -91,12 +93,10 @@ export default function SubscriptionList() {
         </div>
       </div>
 
-      {/* Subscription Cards */}
+      {/* Subscription Table */}
       {sortedSubscriptions.length > 0 ? (
-        <div className="grid grid-cols-1 gap-6">
-          {sortedSubscriptions.map((subscription) => (
-            <SubscriptionCard key={subscription.id} subscription={subscription} />
-          ))}
+        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
+          <SubscriptionTable subscriptions={sortedSubscriptions} />
         </div>
       ) : (
         <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-12 text-center">

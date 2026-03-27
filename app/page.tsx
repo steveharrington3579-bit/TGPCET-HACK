@@ -8,7 +8,6 @@ import FileUpload from '@/components/FileUpload';
 import SubscriptionList from '@/components/SubscriptionList';
 import AnalyticsPanel from '@/components/AnalyticsPanel';
 import TimelineView from '@/components/TimelineView';
-import WasteCalculator from '@/components/WasteCalculator';
 import AIAdvisor from '@/components/AIAdvisor';
 import SavingsPanel from '@/components/SavingsPanel';
 import { Transaction } from '@/types';
@@ -89,14 +88,9 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Third row: Timeline View (50%) | Waste Calculator (50%) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-          <div>
-            <TimelineView />
-          </div>
-          <div>
-            <WasteCalculator />
-          </div>
+        {/* Third row: Timeline View (full width, enhanced spacing) */}
+        <div className="mb-8">
+          <TimelineView />
         </div>
 
         {/* Fourth row: AI Advisor (60%) | Savings Panel (40%) */}

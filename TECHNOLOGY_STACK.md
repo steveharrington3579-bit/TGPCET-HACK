@@ -150,7 +150,6 @@ Subscription Slasher Dashboard is a Next.js 14 web application that detects recu
 - **KPICards**: [`components/KPICards.tsx`](components/KPICards.tsx) - Key performance indicators
 - **AnalyticsPanel**: [`components/AnalyticsPanel.tsx`](components/AnalyticsPanel.tsx) - Analytics dashboard
 - **SavingsPanel**: [`components/SavingsPanel.tsx`](components/SavingsPanel.tsx) - Potential savings calculator
-- **WasteCalculator**: [`components/WasteCalculator.tsx`](components/WasteCalculator.tsx) - Waste analysis tool
 - **AIAdvisor**: [`components/AIAdvisor.tsx`](components/AIAdvisor.tsx) - AI-powered recommendations
 - **Header**: [`components/Header.tsx`](components/Header.tsx) - Application header with navigation
 
