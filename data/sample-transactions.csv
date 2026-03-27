@@ -1,0 +1,26 @@
+id,date,merchant,amount
+1,2026-01-15,Netflix,15.99
+2,2026-02-15,Netflix,15.99
+3,2026-03-15,Netflix,15.99
+4,2026-01-10,Spotify Premium,10.99
+5,2026-02-10,Spotify Premium,10.99
+6,2026-03-10,Spotify Premium,10.99
+7,2026-01-01,Amazon Web Services,42.35
+8,2026-02-01,Amazon Web Services,48.72
+9,2026-03-01,Amazon Web Services,51.23
+10,2026-01-20,LA Fitness,29.99
+11,2026-02-20,LA Fitness,29.99
+12,2026-03-20,LA Fitness,29.99
+13,2026-01-05,DoorDash,24.50
+14,2026-01-12,DoorDash,18.75
+15,2026-01-19,DoorDash,32.40
+16,2026-02-03,DoorDash,21.80
+17,2026-02-17,DoorDash,27.95
+18,2026-03-08,DoorDash,19.60
+19,2026-01-25,Uber Eats,16.30
+20,2026-02-08,Uber Eats,22.15
+21,2026-03-14,Uber Eats,18.90
+22,2026-01-03,Disney+,7.99
+23,2026-02-03,Disney+,7.99
+24,2026-03-03,Disney+,7.99
+25,2026-02-28,Adobe Creative Cloud,52.99

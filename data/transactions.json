@@ -1,0 +1,122 @@
+[
+  {
+    "id": "txn_001",
+    "date": "2026-02-15",
+    "merchant": "Netflix",
+    "amount": 15.99
+  },
+  {
+    "id": "txn_002",
+    "date": "2026-03-15",
+    "merchant": "Netflix",
+    "amount": 15.99
+  },
+  {
+    "id": "txn_003",
+    "date": "2026-01-10",
+    "merchant": "Spotify Premium",
+    "amount": 10.99
+  },
+  {
+    "id": "txn_004",
+    "date": "2026-02-10",
+    "merchant": "Spotify Premium",
+    "amount": 10.99
+  },
+  {
+    "id": "txn_005",
+    "date": "2026-03-10",
+    "merchant": "Spotify Premium",
+    "amount": 10.99
+  },
+  {
+    "id": "txn_006",
+    "date": "2026-02-01",
+    "merchant": "Amazon Web Services",
+    "amount": 45.67
+  },
+  {
+    "id": "txn_007",
+    "date": "2026-03-01",
+    "merchant": "Amazon Web Services",
+    "amount": 52.34
+  },
+  {
+    "id": "txn_008",
+    "date": "2026-02-20",
+    "merchant": "LA Fitness",
+    "amount": 29.99
+  },
+  {
+    "id": "txn_009",
+    "date": "2026-03-20",
+    "merchant": "LA Fitness",
+    "amount": 29.99
+  },
+  {
+    "id": "txn_010",
+    "date": "2026-01-05",
+    "merchant": "Disney+",
+    "amount": 7.99
+  },
+  {
+    "id": "txn_011",
+    "date": "2026-02-05",
+    "merchant": "Disney+",
+    "amount": 7.99
+  },
+  {
+    "id": "txn_012",
+    "date": "2026-03-05",
+    "merchant": "Disney+",
+    "amount": 7.99
+  },
+  {
+    "id": "txn_013",
+    "date": "2026-02-28",
+    "merchant": "Adobe Creative Cloud",
+    "amount": 52.99
+  },
+  {
+    "id": "txn_014",
+    "date": "2026-03-28",
+    "merchant": "Adobe Creative Cloud",
+    "amount": 52.99
+  },
+  {
+    "id": "txn_015",
+    "date": "2026-03-01",
+    "merchant": "Microsoft 365",
+    "amount": 6.99
+  },
+  {
+    "id": "txn_016",
+    "date": "2026-02-01",
+    "merchant": "Microsoft 365",
+    "amount": 6.99
+  },
+  {
+    "id": "txn_017",
+    "date": "2026-03-12",
+    "merchant": "Hulu",
+    "amount": 12.99
+  },
+  {
+    "id": "txn_018",
+    "date": "2026-02-12",
+    "merchant": "Hulu",
+    "amount": 12.99
+  },
+  {
+    "id": "txn_019",
+    "date": "2026-03-25",
+    "merchant": "Dropbox Plus",
+    "amount": 9.99
+  },
+  {
+    "id": "txn_020",
+    "date": "2026-02-25",
+    "merchant": "Dropbox Plus",
+    "amount": 9.99
+  }
+]
